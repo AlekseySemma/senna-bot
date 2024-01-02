@@ -14,7 +14,7 @@ export async function before(m, {conn, isAdmin, isBotAdmin }) {
             const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
             if (m.text.includes(linkThisGroup)) return !0
         }
-        await conn.reply(m.chat, `*≡ Ублюдок, мать твою, а ну иди сюда говно собачье, решил ко мне лезть? Ты, засранец вонючий, мать твою, а?*
+        await conn.reply(m.chat, `*≡ Ай-ай-ай!*
             
 Ссылки в группе запрещены правилами! 
 *@${m.sender.split('@')[0]}*  Вы удалены из нашей группы! ${isBotAdmin ? '' : '\n\nNo soy admin así que no te puedo expulsar :"v'}`, null, { mentions: [m.sender] } )
